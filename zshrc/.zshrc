@@ -129,9 +129,10 @@ alias v='nvim'
 alias cat=bat
 
 # Eza
-alias l="eza -l --icons --git -a"
-alias lt="eza --tree --level=2 --long --icons --git"
-alias ltree="eza --tree --level=2  --icons --git"
+# https://github.com/eza-community/eza
+alias l="eza --long --icons --git --all --git-ignore --header"
+alias lt="eza --tree --level=2 --long --icons --git --git-ignore --header"
+alias ltree="eza --tree --level=2  --icons --git --git-ignore"
 
 source ~/my_configs/powerlevel10k/powerlevel10k.zsh-theme
 
